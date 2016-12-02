@@ -1,27 +1,35 @@
 'use strict';
 
-let userNumber = null;
-let operation = null;
+window.userNumber = null;
+window.operation = null;
 
 let $card = $('.card');
 
 
   function flashCardSolve(){
-    if(userNumber) {
+    if(userNumber!==null) {
       console.log("clicked");
       $card.css('background-color', 'red');
+      console.log("red");
       $card.append(solveEquation());
-      $card.click(flashCardReset);
+      console.log("appended");
+
+      //$card.click(flashCardReset);
+      console.log("reset");
     }
   }
 
   function flashCardReset() {
     $card.css('background-color', 'white');
+    console.log("white");
     $card.html("");
+    console.log("card cleared");
     userNumber = null;
     operation = null;
+    console.log("number and operation cleared");
     randomNumber = Math.floor((Math.random() * 9) + 1);
-    $card.click(flashCardSolve);
+    console.log("random number generated");
+    //$card.click(flashCardSolve);
   }
 
   function solveEquation() {
@@ -47,4 +55,18 @@ $('.numbers .dropdown-item').click(function(event) {
   console.log(userNumber);
 });
 
-$card.click(flashCardSolve);
+$("#solve").click(flashCardSolve);
+$("#nextCard").click(function(){
+//get random number
+randomNumber = Math.floor((Math.random() * 9) + 1);
+  $card.html("");
+  $card.css('background-color', 'white');
+  //get user number
+  //userNumber = window.userNumber;
+  //get operation
+  //operation = window.operation;
+  //display equation
+  displayEquation();
+  console.log("next card");
+});
+$("#reset").click(flashCardReset);
