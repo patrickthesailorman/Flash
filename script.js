@@ -9,7 +9,7 @@ let $card = $('.card');
   function flashCardSolve(){
     if(userNumber!==null) {
       console.log("clicked");
-      $card.css('background-color', 'red');
+      $card.css('background-color', 'lightgreen');
       console.log("red");
       $card.append(solveEquation());
       console.log("appended");
@@ -37,7 +37,18 @@ let $card = $('.card');
   }
 
   function displayEquation() {
-    $card.append(randomNumber + ' ' + operation + ' ' + userNumber + ' = ');
+    let displayOperation = '';
+    switch(operation) {
+      case '*':
+        displayOperation = '&times;';
+        break;
+      case '/':
+        displayOperation = '&divide;';
+        break;
+      default:
+        displayOperation = operation;
+    }
+    $card.append(randomNumber + ' ' + displayOperation + ' ' + userNumber + ' = ');
   }
 
 let randomNumber = Math.floor((Math.random() * 9) + 1);
@@ -56,11 +67,12 @@ $('.numbers .dropdown-item').click(function(event) {
 });
 
 $("#solve").click(flashCardSolve);
+  $card.css('background-color', 'lightgreen');
 $("#nextCard").click(function(){
 //get random number
 randomNumber = Math.floor((Math.random() * 9) + 1);
   $card.html("");
-  $card.css('background-color', 'white');
+  $card.css('background-color', 'yellow');
   //get user number
   //userNumber = window.userNumber;
   //get operation
@@ -70,3 +82,4 @@ randomNumber = Math.floor((Math.random() * 9) + 1);
   console.log("next card");
 });
 $("#reset").click(flashCardReset);
+  $card.css('background-color', 'yellow');
