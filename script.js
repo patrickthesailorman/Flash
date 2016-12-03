@@ -69,15 +69,10 @@ $('.numbers .dropdown-item').click(function(event) {
 $("#solve").click(flashCardSolve);
   $card.css('background-color', 'lightgreen');
 $("#nextCard").click(function(){
-//get random number
 randomNumber = Math.floor((Math.random() * 9) + 1);
   $card.html("");
   $card.css('background-color', 'yellow');
-  //get user number
-  //userNumber = window.userNumber;
-  //get operation
-  //operation = window.operation;
-  //display equation
+
   displayEquation();
   console.log("next card");
 });

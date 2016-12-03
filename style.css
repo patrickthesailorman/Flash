@@ -38,12 +38,13 @@ h2 {
 p {
   color: green;
   text-align: center;
-  margin: 45px;
+  margin: 5px;
+  font: ;
 
 }
 .btn-secondary {
   background-color: lightblue;
-  align-content: space-between;
+  vertical-align: text-top;
 }
 .name {
   color: yellow;
