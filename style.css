@@ -4,7 +4,6 @@ html {
 body {
   background-color: lightyellow;
 }
-
 .card{
   height: 300px;
   width: 500px;
@@ -15,6 +14,7 @@ body {
   margin:8%;
   font-size: 100px;
   text-align: center;
+  font-family: 'Chewy', cursive;
   color: blue;
 
 }
@@ -27,27 +27,32 @@ title {
 }
 h1 {
   color: blue;
-  text-align: center
+  text-align: center;
+  font-family: 'Chewy', cursive;
 }
 
 h2 {
   color: red;
-  text-align: center
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
 }
 
 p {
   color: green;
   text-align: center;
   margin: 5px;
-  font: ;
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
 
 }
 .btn-secondary {
   background-color: lightblue;
   vertical-align: text-top;
+  font-family: 'Chewy', cursive;
+  color: blue;
 }
 .name {
-  color: yellow;
+  color: blue;
 }
 
 .board {
@@ -58,13 +63,20 @@ p {
 
 .nav {
   background-color: rgb(2, 132, 130);
+  font-family: 'Architects Daughter', cursive;
+  color: blue;
+  font-weight: bold;
       }
 .navbar{
   background-color: lightgreen;
+  font-family: 'Chewy', cursive;
+  color: blue;
+  font-weight: bold;
+
 }
 a {
         background-color: lightblue;
-        color: white;
+        color: blue;
         font-style: italic;
         display: block;
         float: left;
@@ -87,4 +99,7 @@ a:hover {
 footer {
   background-color: lightgreen;
   text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 18px;
+  color: red;
 }
