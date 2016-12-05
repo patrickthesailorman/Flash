@@ -16,12 +16,8 @@ body {
   text-align: center;
   font-family: 'Chewy', cursive;
   color: blue;
+}
 
-}
-.div {
-  font-size: 40;
-  text-align: center;
-}
 title {
   color: red;
 }
@@ -55,12 +51,6 @@ p {
   color: blue;
 }
 
-.board {
-  height: 80%;
-  width: 50%;
-  display: inline-block;
-}
-
 .nav {
   background-color: rgb(2, 132, 130);
   font-family: 'Architects Daughter', cursive;
@@ -85,15 +75,6 @@ a {
 
 a:hover {
         background-color: #ee5f3c;
-      }
-
-.clearfix:after {
-        visibility: hidden;
-        display: block;
-        content: " ";
-        clear: both;
-        height: 0;
-        font-size: 0;
       }
 
 footer {
