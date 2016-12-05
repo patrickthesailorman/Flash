@@ -20,7 +20,7 @@ let $card = $('.card');
   }
 
   function flashCardReset() {
-    $card.css('background-color', 'white');
+    $card.css('background-color', 'yellow');
     console.log("white");
     $card.html("");
     console.log("card cleared");
