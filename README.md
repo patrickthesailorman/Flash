@@ -5,10 +5,11 @@ Designed with children in mind, to work on and develop math skills using flash c
 
 
 used:
-  html;
-  css;
-  javascript;
-  jquery;
+
+  html,
+  css,
+  javascript,
+  jquery
 
   user stories:
 
